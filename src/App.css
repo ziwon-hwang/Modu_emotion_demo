@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poor+Story&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Poor+Story&display=swap");
 body {
   background-color: #f6f6f6;
   display: flex;
@@ -30,7 +30,96 @@ body {
   padding-left: 20px;
   padding-right: 20px;
 }
+/*Landing*/
+.logo {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fdffe8;
+}
+.subTitle {
+  font-family: "Nanum Pen Script", cursive;
+  font-size: 44px;
+  justify-content: start;
+  background-color: transparent;
+}
+.Title {
+  font-family: "Nanum Pen Script", cursive;
+  font-size: 80px;
+  justify-content: end;
+  border-radius: 50px;
+  background-color: transparent;
+}
+.logo_mosim {
+  height: 200px;
+  width: auto;
+  align-items: center;
+}
 
+/*Explain*/
+.Explain {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fdffe8;
+}
+.Explain .summary {
+  padding-top: 40%;
+  padding-bottom: 10px;
+  font-size: 25px;
+}
+.Explain .Title {
+  padding-bottom: 10px;
+  font-size: 100px;
+}
+.Explain .explains {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.Explain .explain_1 {
+  margin-left: 30px;
+  margin-bottom: 25px;
+  padding: 10px;
+  font-size: 30px;
+}
+.Explain .explain_2 {
+  margin-left: 30px;
+  margin-bottom: 25px;
+  padding: 10px;
+  font-size: 30px;
+}
+.Explain .explain_3 {
+  margin-left: 30px;
+  margin-bottom: 25px;
+  padding: 10px;
+  font-size: 30px;
+}
+.Explain .explain_4 {
+  margin-left: 30px;
+  margin-bottom: 25px;
+  padding: 10px;
+  font-size: 30px;
+}
+.Explain .explain_5 {
+  margin-left: 30px;
+  margin-bottom: 25px;
+  padding: 10px;
+  font-size: 30px;
+}
+.Explain .MyButton {
+  height: 10%;
+  width: 40%;
+  font-size: 40px;
+  letter-spacing: 5px;
+  border-radius: 50px;
+  background-color: #22fdb7;
+}
 /*My Button */
 .MyButton {
   cursor: pointer;

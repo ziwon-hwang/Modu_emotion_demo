@@ -43,8 +43,6 @@ const Diary = () => {
     const curEmotionData = emotionList.find(
       (it) => parseInt(it.emotion_id) === parseInt(data.emotion)
     );
-    console.log("현재 감정 데이터(by Diary.js)");
-    console.log(curEmotionData);
 
     return (
       <div className="DiaryPage">

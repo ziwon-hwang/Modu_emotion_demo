@@ -10,7 +10,8 @@ const Home = () => {
       <div className="Menu_header">
         <MyHeader
           type={"Settings"}
-          leftChild={<img src="../Setting_img/BackButton.png"></img>}
+          headText={"모두의 심리"}
+          leftChild={<img src="../Setting_img/BackButtion.png"></img>}
           rightChild={<img src="../Setting_img/settings.png"></img>}
         />
       </div>

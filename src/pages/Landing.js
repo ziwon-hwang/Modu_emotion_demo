@@ -1,3 +1,4 @@
+import { async } from "q";
 import { useNavigate } from "react-router";
 import Mosimi from "../components/Mosimi";
 import Text from "../components/Text";

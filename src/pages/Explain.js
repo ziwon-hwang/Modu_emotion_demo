@@ -2,6 +2,7 @@ import { useNavigate } from "react-router";
 import Mosimi from "../components/Mosimi";
 import MyButton from "../components/MyButton";
 import Text from "../components/Text";
+
 const Explain = () => {
   const navigate = useNavigate();
   return (

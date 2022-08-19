@@ -41,7 +41,7 @@ const DiaryEditor = ({ isEdit, originData }) => {
         //수정일때
         onEdit(originData.id, date, content, emotion);
       }
-      navigate("/", { replace: true });
+      navigate("/diary_home", { replace: true });
     }
   }
 

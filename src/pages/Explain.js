@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router";
+import Mosimi from "../components/Mosimi";
 import MyButton from "../components/MyButton";
 import Text from "../components/Text";
 const Explain = () => {
@@ -26,9 +27,10 @@ const Explain = () => {
           textType="explain_5"
           text="5. 주변 상담소 또는 기관을 추천해줘요."
         />
+        <Mosimi type="explain" src="../logo/mosimi_explain.png" />
       </div>
 
-      <MyButton text={"이해했어요!"} onClick={() => navigate(`/home`)} />
+      <MyButton text={"이해했어요!"} onClick={() => navigate(`/login`)} />
     </div>
   );
 };

@@ -3,7 +3,9 @@ import React, { useEffect } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom"; //browser url과 연결
 import Landing from "./pages/Landing";
 import Explain from "./pages/Explain";
+import Login from "./pages/Login";
 import Home from "./pages/Home";
+import Diary_Home from "./pages/Diary_Home";
 import Edit from "./pages/Edit";
 import New from "./pages/New";
 import Diary from "./pages/Diary";
@@ -116,7 +118,9 @@ function App() {
             <Routes>
               <Route path="/" element={<Landing />} />
               <Route path="/explain" element={<Explain />} />
+              <Route path="/login" element={<Login />} />
               <Route path="/home" element={<Home />} />
+              <Route path="/diary_home" element={<Diary_Home />} />
               <Route path="/new" element={<New />} />
               <Route path="/edit/:id" element={<Edit />} />
               <Route path="/diary/:id" element={<Diary />} />

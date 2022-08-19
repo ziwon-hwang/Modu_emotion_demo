@@ -24,7 +24,7 @@ const Edit = () => {
         setOriginData(targetDiary); //originData를 targetDiary로 교체
       } else {
         //9번과 같은 객체(일기리스트)에 없는 일기의 경우 홈으로 보낸다
-        navigate("/", { replace: true });
+        navigate("/diary_home", { replace: true });
       }
     }
   }, [id, diaryList]); //id가 변하거나 diaryList가 변할때 콜백함수 실행

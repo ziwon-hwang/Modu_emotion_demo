@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router";
+import Mosimi from "../components/Mosimi";
 import Text from "../components/Text";
 
 const Landing = () => {
@@ -8,10 +9,10 @@ const Landing = () => {
       <Text
         textType="subTitle"
         text={"대화가 필요한 모든 순간 당신 곁에"}
-        onClick={() => navigate(`/home`)}
+        onClick={() => navigate(`/login`)}
       />
       <Text textType="Title" text={"모두의 심리"} />
-      <img className="logo_mosim" src="../logo/modu_chatbot_logo.png"></img>
+      <Mosimi type="landing" src="../logo/mosimi_landing.png" />
     </div>
   );
 };

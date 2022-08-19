@@ -52,23 +52,21 @@ body {
   border-radius: 50px;
   background-color: transparent;
 }
-.logo_mosim {
+.Mosimi {
   height: 200px;
   width: auto;
   align-items: center;
+  text-align: center;
 }
-
 /*Explain*/
 .Explain {
-  height: 100vh;
   display: flex;
   align-items: center;
   flex-direction: column;
   background-color: #fdffe8;
 }
 .Explain .summary {
-  padding-top: 40%;
-  padding-bottom: 10px;
+  margin-top: 20px;
   font-size: 25px;
 }
 .Explain .Title {
@@ -112,13 +110,128 @@ body {
   padding: 10px;
   font-size: 30px;
 }
+
 .Explain .MyButton {
-  height: 10%;
-  width: 40%;
+  height: 70px;
+  width: auto;
+  margin-bottom: 30px;
   font-size: 40px;
   letter-spacing: 5px;
   border-radius: 50px;
   background-color: #22fdb7;
+}
+
+/*Settings */
+header img {
+  width: 28%;
+  height: auto;
+}
+/*Home */
+.Home .Menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Menu .MenuButton {
+  display: grid;
+  place-items: center;
+  min-height: 50vh;
+  grid-template-columns: repeat(2, 300px);
+}
+.Menu .MyButton {
+  position: relative;
+  background: #ececec;
+  border-radius: 15px;
+  width: 70%;
+  height: 30%;
+  font-size: 20px;
+}
+.MyButton_right {
+  margin-top: 50px;
+  margin-left: 10px;
+  box-shadow: 3px 3px 2px gray;
+}
+.MyButton_left {
+  box-shadow: -3px 3px 2px gray;
+}
+.MyButton_left:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border: 16px solid transparent;
+  border-top-color: #ececec;
+  border-bottom: 0;
+  border-left: 0;
+  margin-left: -8px;
+  margin-bottom: -16px;
+}
+
+.MyButton_right:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border: 16px solid transparent;
+  border-top-color: #ececec;
+  border-bottom: 0;
+  border-right: 0;
+  margin-left: -8px;
+  margin-bottom: -16px;
+}
+
+.Menu .home_description {
+  padding-top: 30px;
+  color: #14622a;
+  font-size: 25px;
+  font-weight: bold;
+}
+/*login*/
+.Login {
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Login h3 {
+  text-align: center;
+  letter-spacing: 1px;
+
+  line-height: 26px;
+}
+.Login_info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.LoginPicture {
+  background-color: transparent;
+  height: 200px;
+  width: auto;
+  padding-bottom: 20px;
+}
+.Login_info input {
+  margin-top: 8px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  width: 400px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: none;
+  border-bottom: solid #ececec;
+}
+.Login_info .InfoSubmit {
+  padding-left: 50px;
+  padding-right: 50px;
+  height: 40px;
+  border: none;
+  background-color: #1dde7d;
+  border-radius: 10px;
 }
 /*My Button */
 .MyButton {
@@ -147,9 +260,10 @@ body {
   background-color: #fd565f;
   color: white;
 }
+
 header {
-  padding-top: 20;
-  padding-bottom: 20;
+  padding-top: 20px;
+  padding-bottom: 20px;
 
   display: flex;
   align-items: center;
@@ -180,14 +294,6 @@ header button {
   font-family: "Poor Story", cursive;
 }
 
-/*DiaryList*/
-/*      <div className="menu_wrapper">
-{.DiaryList .menu_wrapper {
-  margin-top: 20px;
-  margin-bottom: 30px;
-
-  align-items: center;
-}}*/
 .DiaryList .diarylist_sort_menu {
   padding-top: 10px;
   display: flex;

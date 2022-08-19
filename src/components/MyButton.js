@@ -1,5 +1,9 @@
 const MyButton = ({ text, type, onClick }) => {
-  const btnType = ["positive", "negative"].includes(type) ? type : "default";
+  const btnType = ["positive", "negative"].includes(type)
+    ? type
+    : type === undefined
+    ? "default"
+    : type;
   return (
     <button
       className={["MyButton", `MyButton_${btnType}`].join(" ")}

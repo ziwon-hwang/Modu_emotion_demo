@@ -7,7 +7,7 @@ const DiaryItem = ({ id, emotion, content, date }) => {
   const handleRemove = () => {
     if (window.confirm("정말 삭제하시겠습니까?")) {
       onRemove(id);
-      navigate("/", { replace: true });
+      navigate("/diary_home", { replace: true });
     }
   };
 
